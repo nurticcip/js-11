@@ -1,66 +1,34 @@
-// ! Function decloration
-// function myFunc(str) {
-//     return str
+// function integrate(coeff, exponent) {
+//   const newExponent = exponent + 1;
+//   const newCoeff = coeff / newExponent;
+//   return `${newCoeff}x^${newExponent} + C`;
 // }
-// console.log(myFunc('motion'))
+// const result = integrate(3, 2);
+// console.log(result);
 
 
 
-// ! Function expression
-// const myFn = function () {
-//     return 'hello world!'
+// let arr = "motion web IT academy"
+// const enter = (str) => {
+//     let result = str.trim(' ').split(' ').filter(el => {
+//         return el !== el.toUpperCase()
+//     }).map(el => {
+//         return el[0].toUpperCase() + el.slice(1).toLowerCase()
+//     }).join('')
+//     return result !== ' '.replace(result.length) && result !== '' ?  '#' + result : false
 // }
-// console.log(myFn())
-
-
-
-// ! Arrow function =>
-// const myFunc = () => {
-//     return 'hello world!'
-// }
-// console.log(myFunc())
-
-
-
-// function myFunc(str) {
-//     if (str[0] === 'n') {
-//         return str + 'academy';
-//     }
-//     return 'web';
-// }
-// console.log(myFunc('motion'))
-
-
-// function plusNumbers(num) {
-//     return num ** 2
-// }
-// console.log(plusNumbers(100))
-
-
-
-// function square(number) {
-//     let result = number ** 2
-//     console.log(result)
-// }
-// square(10)
+// console.log(enter(arr))
 
 
 
 
-//?
-// function numbers(numberOne, numberTwo) {
-//     return numberOne ** numberTwo
-// }
-// console.log(numbers(2,3))
-
-
-// const numbers = function (numberOne, numberTwo) {
-//     return numberOne ** numberTwo
-// }
-// console.log(numbers(2,3))
-
-
-// const numbers = (numberOne, numberTwo) => {
-//     return numberOne ** numberTwo
-// }
-// console.log(numbers(2, 3))
+let arr = ''
+const array = (str) => {
+    let result = str.trim(' ').split(' ').filter(el => {
+        return el !== el.toUpperCase()
+    }).map(el => {
+        return el[0].toUpperCase() + el.slice(1) .toLowerCase()
+    }).join('')
+    return result !== ' '.replace(result.length) && result !== '' ?  '#' + result : false
+}
+console.log(array(arr))
